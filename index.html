@@ -22,6 +22,7 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Top line -->
     <header class="header">
       <div class="container container-header">
         <nav class="header-navigation">
@@ -58,6 +59,7 @@
       </div>
     </header>
     <main>
+      <!-- Hero -->
       <section class="hero-banner">
         <div class="container container-hero-banner">
           <h1 class="hero-banner-title">
@@ -69,6 +71,7 @@
         </div>
       </section>
 
+      <!-- Features -->
       <section class="section features">
         <div class="container container-features">
           <h2 class="visually-hidden">Features Section</h2>
@@ -124,6 +127,8 @@
           </ul>
         </div>
       </section>
+
+      <!--Team-->
       <section class="section team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -279,6 +284,8 @@
           </ul>
         </div>
       </section>
+
+      <!--Portfolio-->
       <section class="section portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -405,6 +412,7 @@
       </section>
     </main>
 
+    <!--Footer-->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-box">
@@ -449,7 +457,132 @@
             </li>
           </ul>
         </div>
+        <div class="footer-container-subscription">
+          <p class="footer-container-subscription-text">Subscribe</p>
+          <form class="footer-container-subscription-form">
+            <label for="email" class="footer-container-subscription-form-label">
+              <input
+                id="email"
+                type="email"
+                placeholder="E-mail"
+                name="email"
+                class="footer-container-subscription-form-label-input"
+              />
+            </label>
+            <button
+              type="submit"
+              class="footer-container-subscription-form-btn"
+            >
+              Subscribe
+              <svg
+                width="24"
+                height="24"
+                class="footer-container-subscription-form-btn-svg"
+              >
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Container -->
+    <div class="pop-up-container">
+      <div class="pop-up">
+        <button type="button" class="pop-up-btn">
+          <svg width="8" height="8" class="pop-up-btn-svg">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="pop-up-text">Leave your contacts and we will call you back</p>
+        <form class="pop-up-form">
+          <!-- Name -->
+          <div class="pop-up-form-field-wrapper">
+            <label for="user-name" class="pop-up-form-label">Name</label>
+            <div class="pop-up-form-field">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="pop-up-form-field-input"
+              />
+              <svg width="18" height="24" class="pop-up-form-field-svg">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="pop-up-form-field-wrapper">
+            <label for="user-phone" class="pop-up-form-label">Phone</label>
+            <div class="pop-up-form-field">
+              <input
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                class="pop-up-form-field-input"
+              />
+              <svg width="18" height="24" class="pop-up-form-field-svg">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="pop-up-form-field-wrapper">
+            <label for="user-email" class="pop-up-form-label">Email</label>
+            <div class="pop-up-form-field">
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="pop-up-form-field-input"
+              />
+              <svg width="18" height="24" class="pop-up-form-field-svg">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Comment -->
+          <div class="pop-up-form-field-comment">
+            <label for="user-comment" class="pop-up-form-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              class="pop-up-form-field-comment-textarea"
+            ></textarea>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="pop-up-form-field-comment-checkbox">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              class="visually-hidden checkbox-input"
+            />
+            <label
+              for="user-privacy"
+              class="pop-up-form-field-comment-checkbox-label"
+            >
+              <span class="checkbox-custom">
+                <svg width="10" height="8" class="checkbox-icon">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="policy-link">Privacy Policy</a>
+            </label>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="pop-up-form-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
